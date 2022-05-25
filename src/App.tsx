@@ -11,11 +11,18 @@ function App() {
     { first: 'Max', last: 'Max'},
     { first: 'Alice', last: 'Alice'},
   ]
+
+  const handleClick4 = () => {}
+
   return (
     <div className="App">
       <Greeting name='Bob' count={10} isLogged={true} />
       <List list={list} />
-      <Status status='loading'>
+      <Status 
+        status='loading' 
+        input={{value: '', handleChange: handleClick4}} 
+        handleClick4={handleClick4}
+        >
         <p>THis is child in parent component</p>
       </Status>
     </div>
