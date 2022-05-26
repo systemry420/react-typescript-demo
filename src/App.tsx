@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import Greeting from './components/Greeting';
-import List from './components/List';
-import Status from './components/Status';
+import Greeting from './components/1/Greeting';
+import List from './components/2/List';
+import Status from './components/3/Status';
 
 function App() {
 

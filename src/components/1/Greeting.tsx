@@ -6,10 +6,12 @@ type Props = {
     isLogged: boolean
 }
 
-const Greeting = (props: Props) => {
+const Greeting = ({ name, count, isLogged }: Props) => {
   return (
     <div>
-        <h1>Hello {props.name}</h1>
+        <h1>Hello {name}</h1>
+        <h1>Messages: {count}</h1>
+        {isLogged && <h2>Welcome</h2>}
     </div>
   )
 }

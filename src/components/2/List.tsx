@@ -6,11 +6,11 @@ type Props = {
     }[]
 }
 
-const List = ( props: Props) => {
+const List = ( { list }: Props) => {
   return (
     <div>
         <ul>
-            {props.list.map(item => (
+            {list.map(item => (
                 <li>{item.first} {item.last}</li>
             ))}
         </ul>
