@@ -4,6 +4,8 @@ import Greeting from './components/1/Greeting';
 import List from './components/2/List';
 import Status from './components/3/Status';
 import Counter from './components/5 - useReducer/Counter';
+import Box from './components/6 - useContext/Box';
+import { ThemeContext, ThemeProvider } from './components/6 - useContext/Theme';
 
 function App() {
 
@@ -28,6 +30,9 @@ function App() {
       </Status> */}
 
       <Counter />
+      <ThemeProvider>
+        <Box />
+      </ThemeProvider>
     </div>
   );
 }
