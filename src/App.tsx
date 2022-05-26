@@ -3,6 +3,7 @@ import './App.css';
 import Greeting from './components/1/Greeting';
 import List from './components/2/List';
 import Status from './components/3/Status';
+import Counter from './components/5 - useReducer/Counter';
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
 
   return (
     <div className="App">
-      <Greeting name='Bob' count={10} isLogged={true} />
+      {/* <Greeting name='Bob' count={10} isLogged={true} />
       <List list={list} />
       <Status 
         status='loading' 
@@ -24,7 +25,9 @@ function App() {
         handleClick4={handleClick4}
         >
         <p>THis is child in parent component</p>
-      </Status>
+      </Status> */}
+
+      <Counter />
     </div>
   );
 }
